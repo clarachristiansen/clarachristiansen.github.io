@@ -51,9 +51,9 @@ github_username:  jekyll
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-#theme: jekyll-theme-clean-blog
-# plugins:
-#   - jekyll-feed
+theme: jekyll-theme-clean-blog
+plugins:
+   - jekyll-feed
 
 # defaults:
 #   - scope:
