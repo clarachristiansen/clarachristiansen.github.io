@@ -52,12 +52,12 @@ github_username:  jekyll
 #   - vendor/gems/
 #   - vendor/ruby/
 #theme: jekyll-theme-clean-blog
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
 
-defaults:
-  - scope:
-      path: 'posts' # empty string means all files
-    values:
-      layout: 'post'
-      author: 'John Doe'
+# defaults:
+#   - scope:
+#       path: 'posts' # empty string means all files
+#     values:
+#       layout: 'post'
+#       author: 'John Doe'
