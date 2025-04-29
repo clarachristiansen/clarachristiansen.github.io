@@ -46,6 +46,8 @@ GEM
       logger
     faraday-net_http (3.4.0)
       net-http (>= 0.5.0)
+    faraday-retry (2.3.1)
+      faraday (~> 2.0)
     ffi (1.17.1-aarch64-linux-gnu)
     ffi (1.17.1-aarch64-linux-musl)
     ffi (1.17.1-arm-linux-gnu)
@@ -321,8 +323,9 @@ DEPENDENCIES
   execjs (= 2.10.0)
   faraday (= 2.12.2)
   faraday-net_http (= 3.4.0)
+  faraday-retry
   ffi (= 1.17.1)
-  github-pages (~> 232)
+  github-pages
   http_parser.rb (~> 0.6.0)
   i18n (= 1.14.7)
   jekyll-feed (~> 0.12)
