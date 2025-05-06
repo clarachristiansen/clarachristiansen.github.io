@@ -1,9 +1,0 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
-data/TA_restaurants_europa.csv
-.DS_Store
-*/.DS_Store
-**/.DS_Store
