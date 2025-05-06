@@ -12,7 +12,7 @@ Throughout history, Danes have been known as explorers and travelers, from the V
 
 Explore destinations around the world based on factors like cost of living, safety, climate, and cuisine options. Toggle between different metrics to find your ideal destination:
 
-<iframe src="assets_own\global_cost_of_living_map.html" width="100%" height="600px" frameborder="0"></iframe>
+<iframe src="/assets_own/global_cost_of_living_map.html" width="100%" height="600px" frameborder="0"></iframe>
 
 ## Top Recommendations Based on Data
 
