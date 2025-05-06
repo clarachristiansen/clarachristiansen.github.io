@@ -9554,4 +9554,17 @@ header.masthead .post-heading .meta a {
   }
 }
 
+body.home-page {
+  background-color: rgb(20, 22, 25);
+}
+body.home-page .post-title {
+  color: #ffffff;
+}
+body.home-page .post-subtitle {
+  color: #cccccc;
+}
+body.home-page .post-meta {
+  color: #999999;
+}
+
 /*# sourceMappingURL=main.css.map */
