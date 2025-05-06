@@ -1,20 +1,99 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-29T16:06:45+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Danes Departing</title><subtitle>A deep dive analysis of the travel patterns of Danes, across time and themes.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2025/03/18/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2025-03-18T21:12:12+01:00</published><updated>2025-03-18T21:12:12+01:00</updated><id>http://localhost:4000/jekyll/update/2025/03/18/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2025/03/18/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-06T09:57:18+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Joe’s Blog</title><subtitle>This is the official blog of Joe. Here you can find all the latest news and updates.</subtitle><entry><title type="html">The History of the Internet: From Arpanet to the World Wide Web</title><link href="http://localhost:4000/2023/03/03/history-of-internet.html" rel="alternate" type="text/html" title="The History of the Internet: From Arpanet to the World Wide Web" /><published>2023-03-03T04:45:13+01:00</published><updated>2023-03-03T04:45:13+01:00</updated><id>http://localhost:4000/2023/03/03/history-of-internet</id><content type="html" xml:base="http://localhost:4000/2023/03/03/history-of-internet.html"><![CDATA[<p>The internet has become an integral part of our lives, connecting people across the world and changing the way we communicate, work, and access information. But how did it all start? Let’s take a journey through the history of the internet.</p>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<h2 id="arpanet-the-beginning-of-the-internet">Arpanet: The Beginning of the Internet</h2>
+<p>In the late 1960s, the United States Department of Defense’s Advanced Research Projects Agency (ARPA) developed the first wide-area computer network called Arpanet. The main purpose of Arpanet was to connect research institutions and allow them to share data and resources. The first message sent over Arpanet was “LO,” but it crashed before the full message “LOGIN” could be sent.</p>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<h2 id="tcpip-the-foundation-of-the-internet">TCP/IP: The Foundation of the Internet</h2>
+<p>In the 1980s, the Transmission Control Protocol/Internet Protocol (TCP/IP) was developed as the standard communication protocol for Arpanet. TCP/IP allowed different types of computer networks to communicate with each other, and it became the foundation for the internet as we know it today.</p>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<h2 id="the-world-wide-web-the-internet-goes-mainstream">The World Wide Web: The Internet Goes Mainstream</h2>
+<p>In 1989, British computer scientist Tim Berners-Lee proposed a system for sharing information over the internet called the World Wide Web (WWW). Berners-Lee developed the first web browser and web server, and in 1991, he released the first website.</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>The World Wide Web revolutionized the internet by making it easy for people to access and share information. It allowed businesses and individuals to create their own websites, and it paved the way for social media, online shopping, and other online services.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<h2 id="the-future-of-the-internet">The Future of the Internet</h2>
+<p>Today, the internet continues to evolve, with new technologies and innovations being developed all the time. From the rise of mobile devices to the growth of the Internet of Things (IoT), the internet is changing the way we live and work.</p>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">How To Set Up A Website</title><link href="http://localhost:4000/2025/03/10/how-to-set-up-a-website.html" rel="alternate" type="text/html" title="How To Set Up A Website" /><published>2025-03-10T00:00:00+01:00</published><updated>2025-03-10T00:00:00+01:00</updated><id>http://localhost:4000/2025/03/10/how-to-set-up-a-website</id><content type="html" xml:base="http://localhost:4000/2025/03/10/how-to-set-up-a-website.html"><![CDATA[<p><img src="/assets/output.png" alt="Description of image" />
-It works!</p>
-<iframe src="/assets/bokeh_plot.html" width="100%" height="500px" frameborder="0"></iframe>
-<iframe src="/assets/global_cost_of_living_map.html" width="100%" height="500px" frameborder="0"></iframe>]]></content><author><name></name></author><summary type="html"><![CDATA[It works!]]></summary></entry></feed>
+<p>As we look to the future, it’s clear that the internet will continue to shape our world in profound ways. Whether it’s through new technologies, new ways of connecting with each other, or new forms of online entertainment, the internet will remain a powerful force for years to come.</p>
+
+<p>In conclusion, the internet has come a long way from its humble beginnings as a research project. From Arpanet to the World Wide Web, the history of the internet is a fascinating story of innovation, collaboration, and discovery. We can only imagine what the future of the internet will bring, but one thing is certain: the internet will continue to change the way we live, work, and interact with each other.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[The internet has become an integral part of our lives, connecting people across the world and changing the way we communicate, work, and access information. But how did it all start? Let’s take a journey through the history of the internet.]]></summary></entry><entry><title type="html">Exploring the World: Recommendations for Danish Travelers</title><link href="http://localhost:4000/2023/03/03/how-to-read-books.html" rel="alternate" type="text/html" title="Exploring the World: Recommendations for Danish Travelers" /><published>2023-03-03T04:45:13+01:00</published><updated>2023-03-03T04:45:13+01:00</updated><id>http://localhost:4000/2023/03/03/how-to-read-books</id><content type="html" xml:base="http://localhost:4000/2023/03/03/how-to-read-books.html"><![CDATA[<p>Throughout history, Danes have been known as explorers and travelers, from the Viking Age to modern globetrotters. Today, with extensive data at our fingertips, we can make more informed decisions about where to travel next. This interactive map provides valuable insights on global metrics that matter to Danish travelers.</p>
+
+<h2 id="interactive-world-map">Interactive World Map</h2>
+
+<p>Explore destinations around the world based on factors like cost of living, safety, climate, and cuisine options. Toggle between different metrics to find your ideal destination:</p>
+
+<iframe src="global_cost_of_living_map.html" width="100%" height="600px" frameborder="0"></iframe>
+
+<h2 id="top-recommendations-based-on-data">Top Recommendations Based on Data</h2>
+
+<h3 id="budget-friendly-european-adventures">Budget-Friendly European Adventures</h3>
+<p>Eastern European countries like Poland, Czech Republic, and Hungary offer excellent value for Danish travelers. These destinations combine affordable prices with rich cultural experiences and historic cities, all within a relatively short flight from Denmark.</p>
+
+<h3 id="warm-weather-retreats">Warm Weather Retreats</h3>
+<p>For those seeking to escape the Danish winter, Portugal and Spain provide the perfect combination of warm temperatures, reasonable costs of living, and high safety ratings. The southern regions of these countries offer particularly mild winters with plenty of sunshine.</p>
+
+<h3 id="culinary-destinations">Culinary Destinations</h3>
+<p>The restaurant data reveals several European cities with outstanding food scenes. Barcelona offers Mediterranean cuisine at prices far below Copenhagen, while Berlin’s diverse food landscape provides exceptional value with dishes from around the world.</p>
+
+<h3 id="safety-conscious-travel">Safety-Conscious Travel</h3>
+<p>If safety is your primary concern, look to fellow Nordic countries like Finland and Iceland, which consistently rank among the world’s safest nations while offering unique landscapes and experiences distinct from Denmark.</p>
+
+<h2 id="finding-your-perfect-match">Finding Your Perfect Match</h2>
+
+<p>When using the map to plan your next trip, consider these approaches:</p>
+
+<ol>
+  <li>
+    <p><strong>Climate Seekers</strong>: Toggle to the temperature layer and look for countries with your ideal climate. Southern Europe offers warm summers and mild winters.</p>
+  </li>
+  <li>
+    <p><strong>Value Travelers</strong>: Compare the cost of living index with the local purchasing power to find places where your Danish kroner will stretch furthest.</p>
+  </li>
+  <li>
+    <p><strong>Urban Explorers</strong>: Examine the restaurant information (purple markers) to discover cities with vibrant food cultures and diverse dining options.</p>
+  </li>
+  <li>
+    <p><strong>Peace of Mind</strong>: The Global Peace Index highlights countries where you can travel with minimal concerns about safety and stability.</p>
+  </li>
+</ol>
+
+<h2 id="planning-tips">Planning Tips</h2>
+
+<ul>
+  <li><strong>Seasonal Considerations</strong>: Remember that temperature data shows annual means; research your specific travel months.</li>
+  <li><strong>Budget Balancing</strong>: Countries with lower living costs often provide exceptional value for Danish travelers accustomed to Copenhagen prices.</li>
+  <li><strong>Language Barriers</strong>: Consider English proficiency levels when traveling to non-Nordic countries.</li>
+</ul>
+
+<p>The world offers endless possibilities for Danish travelers. Use this interactive tool to discover your next perfect destination based on what matters most to you.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Throughout history, Danes have been known as explorers and travelers, from the Viking Age to modern globetrotters. Today, with extensive data at our fingertips, we can make more informed decisions about where to travel next. This interactive map provides valuable insights on global metrics that matter to Danish travelers.]]></summary></entry><entry><title type="html">Dinosaurs are extinct today</title><link href="http://localhost:4000/2020/01/27/hello-wold.html" rel="alternate" type="text/html" title="Dinosaurs are extinct today" /><published>2020-01-27T04:45:13+01:00</published><updated>2020-01-27T04:45:13+01:00</updated><id>http://localhost:4000/2020/01/27/hello-wold</id><content type="html" xml:base="http://localhost:4000/2020/01/27/hello-wold.html"><![CDATA[<p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+
+<p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+
+<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+
+<p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+
+<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+
+<h2 class="section-heading">The Final Frontier</h2>
+
+<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+
+<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+
+<blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
+
+<p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
+
+<h2 class="section-heading">Reaching for the Stars</h2>
+
+<p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
+
+<p><img class="img-fluid" src="https://source.unsplash.com/Mn9Fa_wQH-M/800x450" alt="Demo Image" />
+<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span></p>
+
+<p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
+
+<p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
+
+<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://unsplash.com/">Unsplash</a>.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.]]></summary></entry></feed>
