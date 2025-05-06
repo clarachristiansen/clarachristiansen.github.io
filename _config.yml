@@ -1,7 +1,7 @@
-title: Joe's Blog
-email: joelolawanle@kinsta.com
+title: Danes Departing
+email: s214659@dtu.dk & s216163@dtu.dk
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the official blog of Joe. Here you can find all the latest news and updates.
+  A deep dive analysis of the travel patterns of Danes across time and themes.
 baseurl: '' # the subpath of your site, e.g. /blog
 url: '' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: olawanle_joel
