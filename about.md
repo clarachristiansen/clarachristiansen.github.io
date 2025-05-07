@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-description: This is the page description. 
+description: This website is the result of a final project in course 02806 Social Data Analysis and Visualization, Spring 2025
 permalink: /about/
 background: '/assets/images/about-page.jpeg'
 ---
