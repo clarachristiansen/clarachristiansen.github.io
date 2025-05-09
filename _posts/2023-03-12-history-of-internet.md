@@ -18,7 +18,7 @@ Looking at three key spending categories—travel packages, restaurant dining, a
 
 The visualization below shows how different demographic groups in Denmark allocate their travel spending across three major categories. The radar chart format makes it easy to compare the spending patterns and priorities of each group.
 
-<iframe src="/assets/danish_travel_radar.html"
+<iframe src="/assets/danish_travel_socioeconomic_react.html"
         style="width: 100%; height: 600px; border: none; overflow: hidden;"></iframe>
 
 *Figure 1: Radar chart showing the spending patterns of different Danish demographic groups across travel packages, restaurants, and accommodation.*
