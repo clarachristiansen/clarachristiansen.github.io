@@ -6,6 +6,18 @@ date: 2023-03-02 23:45:13 -0400
 background: '/assets/images/blog/internet.jpeg'
 ---
 
+## TESTIMG
+
+<div class="embed-container">
+  <iframe src="{{ site.baseurl }}/assets/danish_travel_react.html" width="100%" height="700px" frameborder="0"></iframe>
+</div>
+
+<div class="embed-container">
+  <iframe src="{{ site.baseurl }}/assets/danish_travel_socioeconomic_react.html" width="100%" height="700px" frameborder="0"></iframe>
+</div>
+
+
+
 ## Travel Budgeting Patterns Across Danish Demographics
 
 Discover how different demographic groups in Denmark allocate their travel budgets and what it reveals about their preferences and priorities.
