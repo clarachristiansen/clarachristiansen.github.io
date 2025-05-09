@@ -1,242 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Danish Travel Budget Visualization</title>
-  <!-- React and ReactDOM -->
-  <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
-  <!-- Recharts -->
-  <script src="https://unpkg.com/recharts@2.1.12/umd/Recharts.min.js" crossorigin></script>
-  <!-- Babel for JSX -->
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <!-- Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .visualization-container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    @media (max-width: 768px) {
-      .recharts-responsive-container {
-        height: 400px !important;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danish Travel Budget Patterns</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1, h2, h3, h4 {
+            color: #14539a;
+            margin-top: 30px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .visualization-container {
+            margin: 50px 0;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+        }
+        
+        .key-insights {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        
+        .highlight-box {
+            background-color: #e8f4fc;
+            border-left: 4px solid #14539a;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .highlight-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #14539a;
+        }
+        
+        .visualization-placeholder {
+            background-color: #f5f5f5;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0;
+            border-radius: 8px;
+            border: 1px dashed #ccc;
+        }
+        
+        .insight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .insight-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-top: 4px solid #14539a;
+        }
+        
+        .cta-section {
+            background-color: #14539a;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .cta-section h3 {
+            color: white;
+            margin-top: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .insight-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div id="danish-travel-visualization" class="visualization-container"></div>
-
-  <script type="text/babel">
-    // Component will be mounted here
-    const {
-      RadarChart, 
-      PolarGrid, 
-      PolarAngleAxis, 
-      PolarRadiusAxis, 
-      Radar, 
-      Legend, 
-      Tooltip, 
-      ResponsiveContainer,
-      BarChart,
-      Bar,
-      XAxis,
-      YAxis,
-      CartesianGrid
-    } = Recharts;
-
-    const DanishTravelBudget = () => {
-      // Define Danish translations for better context
-      const translations = {
-        "Gennemsnitshusstand": "Average Household",
-        "Selvstændig": "Self-employed",
-        "Højtlønnede": "High Income",
-        "Mellemniveau": "Medium Income",
-        "Grundniveau": "Basic Income",
-        "Arbejdsløs": "Unemployed",
-        "Studerende": "Student",
-        "Pensionist": "Pensioner",
-        "Ude af erhverv": "Not in Workforce"
-      };
-
-      // Original data
-      const groups = [
-        "Gennemsnitshusstand", "Selvstændig", "Højtlønnede", "Mellemniveau",
-        "Grundniveau", "Arbejdsløs", "Studerende", "Pensionist", "Ude af erhverv"
-      ];
-
-      const package_values = [4710, 4581, 7628, 6538, 4413, 155, 1673, 4393, 1320];
-      const restaurant_values = [14197, 18340, 24289, 19945, 16423, 16515, 11459, 7323, 7367];
-      const accommodation_values = [5138, 10129, 9572, 5450, 5677, 11420, 2294, 2972, 2068];
-
-      // Format data for RadarChart
-      const data = [
-        { category: "Travel Packages (DKK)", fullName: "Travel Packages" },
-        { category: "Restaurants (DKK)", fullName: "Restaurants" },
-        { category: "Accommodation (DKK)", fullName: "Accommodation" },
-      ];
-
-      groups.forEach((group, index) => {
-        data[0][group] = package_values[index];
-        data[1][group] = restaurant_values[index];
-        data[2][group] = accommodation_values[index];
-      });
-
-      // State for selected group
-      const [activeGroup, setActiveGroup] = React.useState(null);
-
-      // Define color scheme
-      const colorScheme = {
-        "Gennemsnitshusstand": "#8884d8",
-        "Selvstændig": "#82ca9d",
-        "Højtlønnede": "#ffc658",
-        "Mellemniveau": "#ff8042",
-        "Grundniveau": "#0088fe",
-        "Arbejdsløs": "#00c49f",
-        "Studerende": "#ffbb28",
-        "Pensionist": "#ff8042",
-        "Ude af erhverv": "#a4de6c"
-      };
-
-      // Alternative format for chart that compares groups rather than categories
-      const groupBasedData = groups.map((group, index) => {
-        return {
-          group: group,
-          translated: translations[group],
-          "Travel Packages": package_values[index],
-          "Restaurants": restaurant_values[index],
-          "Accommodation": accommodation_values[index],
-          "Total": package_values[index] + restaurant_values[index] + accommodation_values[index]
-        };
-      });
-
-      // Sort data by total spending
-      const sortedGroupData = [...groupBasedData].sort((a, b) => b.Total - a.Total);
-
-      // Handle mouse events
-      const handleMouseEnter = (group) => {
-        setActiveGroup(group);
-      };
-
-      const handleMouseLeave = () => {
-        setActiveGroup(null);
-      };
-
-      // Format number with commas for thousands
-      const formatNumber = (num) => {
-        return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-      };
-
-      return (
-        <div className="flex flex-col items-center w-full max-w-6xl mx-auto p-6 bg-white rounded-lg">
-          <div className="mb-8 text-center">
-            <h1 className="text-3xl font-bold mb-2 text-blue-800">How Danes Budget for Travel</h1>
-            <h2 className="text-xl text-gray-600 mb-4">Travel expenses vary significantly across different demographic groups</h2>
-            
-            <p className="text-lg mb-6 max-w-3xl mx-auto text-gray-700">
-              Our analysis shows how different groups in Denmark prioritize their travel budget. 
-              From high-income earners spending more on restaurants to unemployed people investing in accommodation 
-              - your travel style often reflects your life situation.
-            </p>
-          </div>
-
-          <div className="w-full h-96 mb-8">
-            <ResponsiveContainer width="100%" height="100%">
-              <RadarChart outerRadius={150} data={groupBasedData}>
-                <PolarGrid />
-                <PolarAngleAxis dataKey="translated" />
-                <PolarRadiusAxis angle={30} domain={[0, 25000]} />
-                
-                <Radar 
-                  name="Travel Packages" 
-                  dataKey="Travel Packages" 
-                  stroke="#8884d8" 
-                  fill="#8884d8" 
-                  fillOpacity={0.6} 
-                />
-                <Radar 
-                  name="Restaurants" 
-                  dataKey="Restaurants" 
-                  stroke="#82ca9d" 
-                  fill="#82ca9d" 
-                  fillOpacity={0.6} 
-                />
-                <Radar 
-                  name="Accommodation" 
-                  dataKey="Accommodation" 
-                  stroke="#ffc658" 
-                  fill="#ffc658" 
-                  fillOpacity={0.6} 
-                />
-                
-                <Tooltip formatter={(value) => `${formatNumber(value)} DKK`} />
-                <Legend />
-              </RadarChart>
-            </ResponsiveContainer>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-8">
-            <div className="bg-blue-50 p-6 rounded-lg shadow">
-              <h3 className="text-xl font-bold mb-2 text-blue-800">High Income</h3>
-              <p className="text-gray-700">Spend significantly more on restaurants (24,289 DKK) and travel packages (7,628 DKK), reflecting a luxury travel style with emphasis on dining experiences.</p>
-            </div>
-            
-            <div className="bg-green-50 p-6 rounded-lg shadow">
-              <h3 className="text-xl font-bold mb-2 text-green-800">Unemployed</h3>
-              <p className="text-gray-700">Surprisingly high accommodation spending (11,420 DKK) and restaurant expenses (16,515 DKK), but minimal spending on travel packages (155 DKK) - suggesting a focus on individual experiences.</p>
-            </div>
-            
-            <div className="bg-amber-50 p-6 rounded-lg shadow">
-              <h3 className="text-xl font-bold mb-2 text-amber-800">Students</h3>
-              <p className="text-gray-700">Lower overall spending with 11,459 DKK for restaurants, 2,294 DKK for accommodation and 1,673 DKK for travel packages - reflecting a tighter budget with focus on food.</p>
-            </div>
-          </div>
-
-          <div className="w-full h-80 mb-8">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart
-                data={sortedGroupData}
-                margin={{
-                  top: 20,
-                  right: 30,
-                  left: 20,
-                  bottom: 5,
-                }}
-              >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="translated" />
-                <YAxis />
-                <Tooltip formatter={(value) => `${formatNumber(value)} DKK`} />
-                <Legend />
-                <Bar dataKey="Travel Packages" stackId="a" fill="#8884d8" />
-                <Bar dataKey="Restaurants" stackId="a" fill="#82ca9d" />
-                <Bar dataKey="Accommodation" stackId="a" fill="#ffc658" />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-
-          <div className="text-center max-w-3xl">
-            <h3 className="text-xl font-bold mb-4 text-gray-800">Key Insights</h3>
-            <ul className="text-left space-y-2 text-gray-700">
-              <li><span className="font-semibold">Restaurant expenses dominate:</span> For all groups, food represents the largest travel expense.</li>
-              <li><span className="font-semibold">Large budget differences:</span> High-income earners spend up to 3 times more on travel than pensioners and those outside the workforce.</li>
-              <li><span className="font-semibold">Surprising patterns:</span> Unemployed people prioritize accommodation significantly more than other groups.</li>
-            </ul>
-          </div>
+    <section class="header">
+        <h1>Travel Budgeting Patterns Across Danish Demographics</h1>
+        <p class="subtitle">Discover how different demographic groups in Denmark allocate their travel budgets and what it reveals about their preferences and priorities</p>
+    </section>
+    
+    <section>
+        <p>Travel spending patterns offer fascinating insights into the priorities and financial situations of different demographic groups. Our analysis of Danish travel spending data reveals striking differences in how various segments of Danish society budget for their vacations and trips.</p>
+        
+        <p>Looking at three key spending categories—travel packages, restaurant dining, and accommodation—we can observe distinct patterns that reflect both financial capacity and travel preferences among Danes.</p>
+    </section>
+    
+    <div class="visualization-container">
+        <h2>Travel Budget Distribution by Demographic Group</h2>
+        <p>The visualization below shows how different demographic groups in Denmark allocate their travel spending across three major categories. The radar chart format makes it easy to compare the spending patterns and priorities of each group.</p>
+        
+        <!-- This is where you would insert your Plotly radar chart HTML -->
+        <div class="visualization-placeholder">
+            <iframe 
+                src="danish_travel_radar.html" 
+                width="100%" 
+                height="100%" 
+                style="border: none; border-radius: 8px;">
+            </iframe>
         </div>
-      );
-    };
-
-    // Render the component
-    ReactDOM.render(<DanishTravelBudget />, document.getElementById('danish-travel-visualization'));
-  </script>
+        
+        <p><em>Figure 1: Radar chart showing the spending patterns of different Danish demographic groups across travel packages, restaurants, and accommodation.</em></p>
+    </div>
+    
+    <div class="key-insights">
+        <h2>Key Findings from the Danish Travel Budget Analysis</h2>
+        <p>Our analysis reveals several notable patterns in how different Danish demographic groups approach travel budgeting:</p>
+        
+        <div class="highlight-box">
+            <div class="highlight-title">Restaurant Spending Dominates Across All Groups</div>
+            <p>For every demographic group analyzed, restaurant spending represents the largest portion of travel budgets. This highlights the importance of culinary experiences in Danish travel culture, regardless of income level or life situation.</p>
+        </div>
+        
+        <div class="highlight-box">
+            <div class="highlight-title">High-Income Earners Focus on Premium Experiences</div>
+            <p>High-income Danes spend significantly more on restaurants (24,289 DKK) and travel packages (7,628 DKK) than other groups, suggesting a preference for premium dining experiences and convenience-oriented travel solutions.</p>
+        </div>
+        
+        <div class="highlight-box">
+            <div class="highlight-title">Surprising Accommodation Spending Among Unemployed</div>
+            <p>One of the most unexpected findings is that unemployed Danes allocate the highest amount to accommodation (11,420 DKK) among all groups, significantly higher than the average household. This might indicate longer stays, potentially combining job searching with travel.</p>
+        </div>
+    </section>
+    
+    <div class="visualization-container">
+        <h2>Comparing Category Spending Across Demographics</h2>
+        <p>To better understand the specific allocation across categories, the bar chart below provides a direct comparison of how each demographic group spends on travel packages, restaurants, and accommodation.</p>
+        
+        <!-- This is where you would insert your Plotly bar chart HTML -->
+        <div class="visualization-placeholder">
+            <iframe 
+                src="danish_travel_bars.html" 
+                width="100%" 
+                height="100%" 
+                style="border: none; border-radius: 8px;">
+            </iframe>
+        </div>
+        
+        <p><em>Figure 2: Bar chart comparing the spending allocation across three travel categories for each demographic group.</em></p>
+    </div>
+    
+    <section>
+        <h2>Understanding the Travel Budget Distribution</h2>
+        <p>The data reveals intriguing patterns in how different Danish demographic groups approach travel spending:</p>
+        
+        <div class="insight-grid">
+            <div class="insight-card">
+                <h3>High-Income Earners</h3>
+                <p>With a total travel budget of 41,489 DKK, high-income earners spend the most overall, with a strong emphasis on restaurant experiences (58.5% of total spending). They also invest significantly in travel packages, suggesting a preference for premium, all-inclusive travel experiences.</p>
+            </div>
+            
+            <div class="insight-card">
+                <h3>Self-Employed</h3>
+                <p>Self-employed Danes have the second-highest travel budget (33,050 DKK) and allocate a surprising 30.6% to accommodation, the highest proportion among all groups except the unemployed. This might reflect longer work-related stays or a preference for higher-quality lodging.</p>
+            </div>
+            
+            <div class="insight-card">
+                <h3>Unemployed</h3>
+                <p>Despite having limited income, unemployed Danes allocate significant funds to travel (28,090 DKK in total), with 40.7% going to accommodation—the highest proportion of any group. This unexpected pattern may indicate extended travel periods or different accommodation priorities.</p>
+            </div>
+            
+            <div class="insight-card">
+                <h3>Students</h3>
+                <p>Students maintain the most balanced spending profile while having among the lowest total budgets (15,426 DKK). Restaurant spending still dominates at 74.3%, with minimal investment in travel packages (10.8%) and accommodation (14.9%), reflecting budget-conscious travel choices.</p>
+            </div>
+        </div>
+        
+        <p>The variation in spending patterns reflects not just financial capacity but fundamentally different approaches to travel. While high-income earners focus on premium dining and comprehensive travel packages, other groups like the unemployed prioritize accommodation, potentially extending their stays to maximize travel value.</p>
+    </section>
+    
+    <div class="cta-section">
+        <h3>Want to Explore More Travel Insights?</h3>
+        <p>Discover how your travel spending compares to others in your demographic group and get personalized recommendations for optimizing your travel budget.</p>
+    </div>
+    
+    <section>
+        <h2>Methodology Note</h2>
+        <p>This analysis is based on comprehensive travel budget data collected from various Danish demographic groups. All figures are reported in Danish Kroner (DKK) and represent average annual spending per household within each category. The three main spending categories analyzed are travel packages (organized tours and package holidays), restaurants (dining out during travel), and accommodation (hotels, rentals, and other lodging expenses).</p>
+    </section>
 </body>
 </html>

@@ -9,7 +9,7 @@ background: '/assets/images/blog/internet.jpeg'
 ## Travel Budgeting Patterns Across Danish Demographics
 
 <div class="embed-container">
-  <iframe src="{{ site.baseurl }}/assets/danish_travel_budget.html" width="100%" height="800px" frameborder="0"></iframe>
+  <iframe src="{{ site.baseurl }}/assets/danish_travel_budget.html" width="100%" height="1500px" frameborder="0"></iframe>
 </div>
 
 Our analysis shows how different groups in Denmark prioritize their travel budget. From high-income earners spending more on restaurants to unemployed people investing in accommodation - your travel style often reflects your life situation.
