@@ -6,6 +6,4 @@ date: 2023-03-02 23:45:13 -0400
 background: '/assets/images/blog/internet.jpeg'
 ---
 
-<div style="width: 100%; height: 750px; overflow: hidden;">
-  <iframe src="assets/test.html" style="width: 100%; height: 100%; border: none;"></iframe>
-</div>
+<iframe src="{{ site.baseurl }}../assets/test.html" style="width: 100%; height: 100%; border: none;"></iframe>
