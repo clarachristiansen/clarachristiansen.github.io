@@ -70,27 +70,38 @@ background: '/assets/images/blog/danish-travel.jpg'
 
 /* New styles for radar chart */
 .radar-chart-container {
-  width: 100%;
-  max-width: 100%;
-  margin: 30px auto;
+  width: 100vw !important;
+  max-width: none !important;
+  margin: 30px -15px;
   text-align: center;
   overflow-x: auto;
   background-color: #f8f9fa;
-  padding: 20px;
+  padding: 40px 20px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .radar-chart-container img {
-  max-width: 100%;
-  height: auto;
+  width: 90vw !important;
+  max-width: 90vw !important;
+  height: auto !important;
   display: inline-block;
   border-radius: 4px;
 }
 
 @media (max-width: 768px) {
   .radar-chart-container {
-    padding: 10px;
+    padding: 20px 10px;
+  }
+  
+  .radar-chart-container img {
+    width: 95vw !important;
+    max-width: 95vw !important;
   }
 }
 </style>
@@ -135,7 +146,7 @@ The animation below traces Denmark's journey from 2000 to 2019, showing how econ
 
 ### Denmark's Position in Global Tourism Timeline
 
-<iframe src="/assets/denmark_tourism_bubble_final_animation.html" width="100%" height="1000" frameborder="0"></iframe>
+<iframe src="/assets/denmark_tourism_bubble_interactive.html" width="100%" height="1000" frameborder="0"></iframe>
 
 <div class="viz-caption">
 This animated visualization tracks Denmark's position in the relationship between economic development and international travel from 2000 to 2019. Denmark's consistent position above the trend line reveals travel behavior driven more by culture than economics.
