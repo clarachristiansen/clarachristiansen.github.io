@@ -105,7 +105,7 @@ In Copenhagen's trendy Vesterbro district, a young marketing professional carefu
 ### How Different Danes Spend Their Travel Kroner
 
 <div class="radar-chart-container">
-  <img src="/assets/combined_radar_charts_vertical.png" alt="Combined radar charts showing Danish travel spending patterns by demographics">
+  <img src="/assets/combined_radar_charts.png" alt="Combined radar charts showing Danish travel spending patterns by demographics">
 </div>
 
 <div class="viz-caption">
