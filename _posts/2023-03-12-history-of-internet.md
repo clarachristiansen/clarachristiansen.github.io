@@ -66,7 +66,7 @@ The following radar charts examine how different demographic groups within Denma
 
 ### Spending Patterns by Socioeconomic Group
 
-![Travel Spending Categories by Socioeconomic Group](/assets/danish_travel_socioeconomic_final.png)
+<img class="img-fluid" src="/assets/danish_travel_socioeconomic_final.png" alt="Demo Image">
 
 <div class="viz-caption">
 Restaurant spending consistently dominates across all socioeconomic groups, with the highest-income earners and self-employed showing the largest overall allocations.
@@ -74,7 +74,7 @@ Restaurant spending consistently dominates across all socioeconomic groups, with
 
 ### Spending Patterns by Age Group
 
-![Travel Spending Categories by Age Group](/assets/danish_travel_age_final.png)
+<img class="img-fluid" src="/assets/danish_travel_age_final.png" alt="Demo Image">
 
 <div class="viz-caption">
 Travel spending peaks in the 60-69 age group, with package spending increasing notably among older travelers.
@@ -82,7 +82,7 @@ Travel spending peaks in the 60-69 age group, with package spending increasing n
 
 ### Spending Patterns by Region
 
-![Travel Spending Categories by Region](/assets/danish_travel_region_final.png)
+<img class="img-fluid" src="/assets/danish_travel_region_final.png" alt="Demo Image">
 
 <div class="viz-caption">
 Regional patterns show the Capital Region significantly outspending other areas, while maintaining similar proportional allocations.
@@ -109,9 +109,7 @@ The animation below automatically cycles through years from 2000 to 2019. Denmar
 
 ### Denmark's Position in Global Tourism Timeline
 
-<div class="iframe-container">
-  <iframe src="/assets/danish_travel_bubble_enhanced.html"></iframe>
-</div>
+<iframe src="/assets/danish_travel_bubble_interactive.html" width="100%" height="500px"></iframe>  
 
 <div class="viz-caption">
 This animated visualization shows how Denmark's position in the relationship between economic development and international travel evolved from 2000 to 2019. Denmark is highlighted in each frame to track its journey relative to other nations.
