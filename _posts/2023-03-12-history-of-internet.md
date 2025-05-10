@@ -1,67 +1,148 @@
 ---
 layout: post
-title: "Danish Travel Spending Patterns Across Demographics"
-subtitle: "Comparing how spending categories distribute across socioeconomic groups, ages, and regions"
+title: "Danish Travel Patterns: From Domestic to Global"
+subtitle: "An interactive exploration of Danish travel spending patterns and Denmark's journey in global tourism"
 date: 2025-05-09 12:00:00 +0200
 background: '/assets/images/blog/danish-travel.jpg'
 ---
 
-## Analyzing Danish Travel Spending Categories
+<style>
+.intro-section {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 1.8;
+}
 
-This analysis explores how the three main travel spending categories—restaurant dining, accommodation, and travel packages—distribute across different demographic dimensions in Denmark. Using radar visualizations, we can directly compare spending patterns and identify key trends.
+.section-divider {
+  text-align: center;
+  margin: 60px 0;
+  font-size: 1.5em;
+  color: #3498db;
+  font-weight: bold;
+}
 
-## Socioeconomic Group Comparison
+.viz-caption {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  margin: 30px 0;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.highlight-box {
+  background-color: #e8f4fd;
+  border-left: 4px solid #3498db;
+  padding: 15px;
+  margin: 20px 0;
+  font-style: italic;
+}
+</style>
+
+<div class="intro-section">
+This analysis examines Danish travel behavior from two perspectives: domestic spending patterns across different demographic groups, and Denmark's position in the global tourism landscape. Together, these visualizations reveal how Danish travel culture manifests both at home and abroad.
+</div>
+
+## Part 1: Danish Domestic Travel Spending Patterns
+
+The following radar charts examine how different demographic groups within Denmark allocate their travel budgets across restaurants, accommodation, and travel packages.
+
+### Spending Patterns by Socioeconomic Group
 
 ![Travel Spending Categories by Socioeconomic Group](/assets/danish_travel_socioeconomic_final.png)
 
-The socioeconomic radar reveals distinct spending patterns:
+<div class="viz-caption">
+Restaurant spending consistently dominates across all socioeconomic groups, with the highest-income earners and self-employed showing the largest overall allocations.
+</div>
 
-- **Restaurant spending** (green) dominates across all socioeconomic groups, with high-income earners and self-employed Danes allocating the most to dining experiences.
-
-- **Accommodation spending** (yellow) shows significant variation between groups, with self-employed travelers and high-income earners investing substantially more than students and pensioners.
-
-- **Package travel** (purple) creates the smallest footprint but is more evenly distributed, showing less dramatic socioeconomic variation than other categories.
-
-The overall pattern shows a clear socioeconomic gradient, with spending increasing from students and unemployed Danes through to high-income earners. Self-employed travelers display a distinctively strong accommodation emphasis, suggesting a preference for quality lodging during their travels.
-
-## Age Group Comparison
+### Spending Patterns by Age Group
 
 ![Travel Spending Categories by Age Group](/assets/danish_travel_age_final.png)
 
-The age-based visualization demonstrates how travel preferences evolve throughout life:
+<div class="viz-caption">
+Travel spending peaks in the 60-69 age group, with package spending increasing notably among older travelers.
+</div>
 
-- **Restaurant spending** (green) forms a distinctive pattern that peaks in middle age (40-49) and gradually declines in older age groups.
-
-- **Accommodation spending** (yellow) reaches its highest point in the 60-69 age bracket, corresponding with early retirement and suggesting increased investment in comfort during travel.
-
-- **Package travel** (purple) shows a clear increase with age, with older demographics allocating significantly more to organized travel experiences than younger Danes.
-
-The radar pattern confirms the life-arc of travel spending, expanding across all categories through middle age, peaking in early retirement years (60-69), and moderately contracting in the over-70 group.
-
-## Regional Variation
+### Spending Patterns by Region
 
 ![Travel Spending Categories by Region](/assets/danish_travel_region_final.png)
 
-The regional radar highlights geographical spending patterns:
+<div class="viz-caption">
+Regional patterns show the Capital Region significantly outspending other areas, while maintaining similar proportional allocations.
+</div>
 
-- **Capital Region (Hovedstaden)** residents outspend other regions across all categories, particularly in restaurant expenditures.
+## Key Domestic Insights
 
-- **Restaurant spending** (green) shows the most regional variation, while package and accommodation spending display more consistent patterns nationwide.
+The radar charts reveal four fundamental patterns:
 
-- All regions maintain similar proportional allocation despite differences in total spending, suggesting consistent travel priorities throughout Denmark.
+1. **Restaurant Primacy**: Dining forms the largest spending category across all demographics
+2. **Socioeconomic Diversity**: Spending patterns vary dramatically across income levels
+3. **Regional Consistency**: Geography affects total amounts but not proportional allocation
+4. **Life Stage Evolution**: Travel priorities shift significantly with age
 
-The visualization confirms the "Capital Region premium" in travel spending while demonstrating that regional differences primarily affect spending amount rather than category priorities.
+<div class="section-divider">● ● ●</div>
 
-## Key Insights from Category Analysis
+## Part 2: Denmark's Journey in Global Tourism (2000-2019)
 
-This visualization approach reveals four fundamental patterns in Danish travel spending:
+To understand Danish travel behavior in a broader context, we follow Denmark's path through nearly two decades of global tourism development.
 
-1. **Restaurant Primacy**: Dining consistently forms the largest spending category across all demographic dimensions, confirming its central role in Danish travel experiences.
+<div class="highlight-box">
+The animation below automatically cycles through years from 2000 to 2019. Denmark is highlighted with bold text and a distinctive border in each frame. You can pause the animation using the controls if you want to examine specific years.
+</div>
 
-2. **The Accommodation Spectrum**: Accommodation spending shows the widest socioeconomic variation, suggesting it serves as a key differentiator in travel styles based on income and occupation.
+### Denmark's Position in Global Tourism Timeline
 
-3. **The Package Age Gradient**: Package spending increases steadily with age, revealing evolving travel preferences throughout the lifecycle.
+<div class="iframe-container">
+  <iframe src="/assets/danish_travel_bubble_enhanced.html"></iframe>
+</div>
 
-4. **Socioeconomic vs. Regional Variation**: Spending patterns vary dramatically across socioeconomic groups but remain relatively consistent across regions, suggesting economic status influences travel style more strongly than geographical location.
+<div class="viz-caption">
+This animated visualization shows how Denmark's position in the relationship between economic development and international travel evolved from 2000 to 2019. Denmark is highlighted in each frame to track its journey relative to other nations.
+</div>
 
-These patterns provide valuable insights for the travel industry in targeting different demographic segments with appropriate offerings based on their distinctive spending profiles.
+## Denmark's Global Tourism Journey: Key Findings
+
+Tracking Denmark through the animation reveals several fascinating patterns:
+
+1. **Consistent High Mobility**: Throughout the entire period, Denmark maintains approximately 1.5 international departures per capita annually—one of the highest rates globally.
+
+2. **Economic Decoupling**: Denmark consistently shows higher travel rates than would be predicted by GDP alone, indicating travel is deeply embedded in Danish culture rather than purely economically driven.
+
+3. **Stability Through Crises**: Even during the 2008 financial crisis, Denmark maintained relatively high travel rates, demonstrating the cultural priority placed on international travel.
+
+4. **Nordic Leadership**: Denmark, along with other Nordic countries, consistently clusters in the upper portion of the chart, showing these nations lead in per-capita international travel.
+
+5. **Gradual Upward Trend**: While maintaining its position relative to other countries, Denmark shows a gradual increase in both GDP and per-capita travel over the two decades.
+
+## Synthesis: Understanding Danish Travel Culture
+
+Combining domestic spending patterns with Denmark's global tourism trajectory provides a comprehensive view of Danish travel culture:
+
+**Domestic Priorities**: Danes prioritize dining experiences across all demographic segments, with patterns varying more by socioeconomic status than geography. This reflects a culture that values quality food experiences as central to travel.
+
+**Global Position**: Denmark's exceptionally high international travel rates, maintained consistently over two decades, demonstrate that travel is not merely a luxury but a core cultural value. The persistence of high travel rates even during economic downturns supports this interpretation.
+
+**Cultural Integration**: The combination of sophisticated domestic travel preferences (restaurant-focused spending) with one of the world's highest international travel rates suggests a mature, travel-integrated culture where both local and global experiences are highly valued.
+
+**Economic vs. Cultural Drivers**: Denmark's position consistently above the GDP-travel correlation line indicates that cultural factors—including values around exploration, international experience, and quality of life—drive travel behavior more strongly than pure economic capacity.
+
+These patterns paint a picture of a nation where travel, both domestic and international, represents an essential aspect of cultural identity rather than mere consumption, practiced across all demographic segments with distinctive patterns that reflect both economic realities and deeply held cultural values.
+
+*Visualizations created using Python and interactive data visualization techniques for DTU course 02806 (Social Data Analysis and Visualization).*
