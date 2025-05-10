@@ -140,7 +140,3 @@ Combining domestic spending patterns with Denmark's global tourism trajectory pr
 **Cultural Integration**: The combination of sophisticated domestic travel preferences (restaurant-focused spending) with one of the world's highest international travel rates suggests a mature, travel-integrated culture where both local and global experiences are highly valued.
 
 **Economic vs. Cultural Drivers**: Denmark's position consistently above the GDP-travel correlation line indicates that cultural factors—including values around exploration, international experience, and quality of life—drive travel behavior more strongly than pure economic capacity.
-
-These patterns paint a picture of a nation where travel, both domestic and international, represents an essential aspect of cultural identity rather than mere consumption, practiced across all demographic segments with distinctive patterns that reflect both economic realities and deeply held cultural values.
-
-*Visualizations created using Python and interactive data visualization techniques for DTU course 02806 (Social Data Analysis and Visualization).*
