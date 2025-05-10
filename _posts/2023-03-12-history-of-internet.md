@@ -109,7 +109,7 @@ The animation below automatically cycles through years from 2000 to 2019. Denmar
 
 ### Denmark's Position in Global Tourism Timeline
 
-<iframe src="/assets/denmark_tourism_bubble_interactive.html" width="100%" height="700" frameborder="0"></iframe>
+<iframe src="/assets/denmark_tourism_bubble_final_animation.html" width="100%" height="700" frameborder="0"></iframe>
 
 <div class="viz-caption">
 This animated visualization shows how Denmark's position in the relationship between economic development and international travel evolved from 2000 to 2019. Denmark is highlighted in each frame to track its journey relative to other nations.
