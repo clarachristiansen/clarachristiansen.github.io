@@ -129,7 +129,7 @@ Geography plays its part too, though perhaps not in the way you'd expect. While 
 Understanding domestic patterns is only half the story. The truly remarkable insight comes when we zoom out to see Denmark's position in the global tourism landscape over the past two decades. When does a society begin to embrace international travel as a cultural norm rather than an occasional luxury?
 
 <div class="highlight-box">
-The animation below traces Denmark's journey from 2000 to 2019, showing how economic development intertwines with travel culture. Denmark appears as a star marker throughout, consistently positioned above the global trend line—suggesting travel behavior driven by values, not just economics.
+The animation below traces Denmark's journey from 1996 to 2019, showing how economic development intertwines with travel culture. Denmark appears as a star marker throughout, consistently positioned above the global trend line—suggesting travel behavior driven by values, not just economics.
 </div>
 
 ### Denmark's Position in Global Tourism Timeline
@@ -137,7 +137,7 @@ The animation below traces Denmark's journey from 2000 to 2019, showing how econ
 <iframe src="/assets/denmark_tourism_bubble_interactive.html" width="100%" height="800" frameborder="0"></iframe>
 
 <div class="viz-caption">
-This animated visualization tracks Denmark's position in the relationship between economic development and international travel from 2000 to 2019. Denmark's consistent position above the trend line reveals travel behavior driven more by culture than economics.
+This animated visualization tracks Denmark's position in the relationship between economic development and international travel from 1996 to 2019. Denmark's consistent position above the trend line reveals travel behavior driven more by culture than economics.
 </div>
 
 Watching Denmark's bubble move through the animation is like observing a cultural marathon runner who maintains a steady lead. While other nations cluster around predictable patterns—more GDP leading to more travel—Denmark consistently punches above its economic weight, maintaining approximately 1.5 international departures per capita annually.
