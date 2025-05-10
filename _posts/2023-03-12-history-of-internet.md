@@ -70,38 +70,26 @@ background: '/assets/images/blog/danish-travel.jpg'
 
 /* New styles for radar chart */
 .radar-chart-container {
-  width: 100vw !important;
-  max-width: none !important;
-  margin: 30px -15px;
+  width: 100%;
+  margin: 30px auto;
   text-align: center;
-  overflow-x: auto;
   background-color: #f8f9fa;
-  padding: 40px 20px;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
 }
 
 .radar-chart-container img {
-  width: 90vw !important;
-  max-width: 90vw !important;
-  height: auto !important;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
   display: inline-block;
   border-radius: 4px;
 }
 
 @media (max-width: 768px) {
   .radar-chart-container {
-    padding: 20px 10px;
-  }
-  
-  .radar-chart-container img {
-    width: 95vw !important;
-    max-width: 95vw !important;
+    padding: 10px;
   }
 }
 </style>
@@ -117,7 +105,7 @@ In Copenhagen's trendy Vesterbro district, a young marketing professional carefu
 ### How Different Danes Spend Their Travel Kroner
 
 <div class="radar-chart-container">
-  <img src="/assets/combined_radar_charts.png" alt="Combined radar charts showing Danish travel spending patterns by demographics">
+  <img src="/assets/combined_radar_charts_vertical.png" alt="Combined radar charts showing Danish travel spending patterns by demographics">
 </div>
 
 <div class="viz-caption">
@@ -146,7 +134,7 @@ The animation below traces Denmark's journey from 2000 to 2019, showing how econ
 
 ### Denmark's Position in Global Tourism Timeline
 
-<iframe src="/assets/denmark_tourism_bubble_interactive.html" width="100%" height="1000" frameborder="0"></iframe>
+<iframe src="/assets/denmark_tourism_bubble_interactive.html" width="100%" height="800" frameborder="0"></iframe>
 
 <div class="viz-caption">
 This animated visualization tracks Denmark's position in the relationship between economic development and international travel from 2000 to 2019. Denmark's consistent position above the trend line reveals travel behavior driven more by culture than economics.
