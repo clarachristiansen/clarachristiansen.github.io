@@ -67,6 +67,32 @@ background: '/assets/images/blog/danish-travel.jpg'
   color: #2c3e50;
   line-height: 1.6;
 }
+
+/* New styles for radar chart */
+.radar-chart-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 30px auto;
+  text-align: center;
+  overflow-x: auto;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.radar-chart-container img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .radar-chart-container {
+    padding: 10px;
+  }
+}
 </style>
 
 <div class="intro-section">
@@ -79,7 +105,9 @@ In Copenhagen's trendy Vesterbro district, a young marketing professional carefu
 
 ### How Different Danes Spend Their Travel Kroner
 
-<img class="img-fluid" src="/assets/combined_radar_charts.png" alt="Combined radar charts showing Danish travel spending patterns by demographics">
+<div class="radar-chart-container">
+  <img src="/assets/combined_radar_charts.png" alt="Combined radar charts showing Danish travel spending patterns by demographics">
+</div>
 
 <div class="viz-caption">
 Danish travel spending patterns reveal distinct profiles: high-income earners dominate all categories, while dining consistently forms the largest expense across all demographics, regions, and age groups.
@@ -107,7 +135,7 @@ The animation below traces Denmark's journey from 2000 to 2019, showing how econ
 
 ### Denmark's Position in Global Tourism Timeline
 
-<iframe src="/assets/denmark_tourism_bubble_interactive.html" width="100%" height="1000" frameborder="0"></iframe>
+<iframe src="/assets/denmark_tourism_bubble_final_animation.html" width="100%" height="1000" frameborder="0"></iframe>
 
 <div class="viz-caption">
 This animated visualization tracks Denmark's position in the relationship between economic development and international travel from 2000 to 2019. Denmark's consistent position above the trend line reveals travel behavior driven more by culture than economics.
