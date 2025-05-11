@@ -70,7 +70,7 @@ The numbers are striking. Restaurants dominate Danish travel budgets across ever
 ## Denmark's Global Tourism Journey
 
 <div class="bubble-container">
-  <iframe src="/assets/denmark_tourism_bubble_interactive.html" width="100%" height="800" frameborder="0"></iframe>
+  <iframe src="/assets/denmark_tourism_bubble_interactive.html" width="100%" height="900" frameborder="0"></iframe>
   <p style="font-style: italic; color: #666; margin-top: 10px;">Track Denmark's position (★) from 1996-2019: consistently above global trends</p>
 </div>
 
