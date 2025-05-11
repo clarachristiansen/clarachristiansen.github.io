@@ -71,7 +71,7 @@ What's particularly striking is how self-employed individuals and high earners s
 ## Denmark's Global Tourism Journey
 
 <div class="bubble-container">
-  <iframe src="/assets/denmark_tourism_bubble_interactive.html" width="100%" height="1100" frameborder="0"></iframe>
+  <iframe src="/assets/denmark_tourism_bubble_interactive.html" width="100%" height="1200" frameborder="0"></iframe>
   <p style="font-style: italic; color: #666; margin-top: 10px;">Track Denmark's position (★) from 1996-2019: consistently above global trends</p>
 </div>
 
@@ -91,4 +91,4 @@ Denmark leads even its Nordic neighbors in per-capita travel, forming part of a 
 
 ---
 
-*Ready to explore more? Check out our [destination recommendations](/_posts/2023-03-2-tool.md) based on Danish travel preferences.*
+*Ready to explore more? Check out our [destination recommendations](2025/05/09/history-of-internet.html) based on Danish travel preferences.*
