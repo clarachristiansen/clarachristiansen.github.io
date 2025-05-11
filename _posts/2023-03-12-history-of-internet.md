@@ -70,7 +70,7 @@ What's particularly striking is how self-employed individuals and high earners s
 ## Denmark's Global Tourism Journey
 
 <div class="bubble-container">
-  <iframe src="/assets/denmark_tourism_bubble_interactive.html" width="100%" height="900" frameborder="0" style="min-height: 600px; max-width: 100%;"></iframe>
+  <iframe src="/assets/denmark_tourism_bubble_interactive.html" width="100%" height="600" frameborder="0" style="min-height: 600px; max-width: 100%;"></iframe>
   <p style="font-style: italic; color: #666; margin-top: 10px;">Track Denmark's position (★) from 1996-2019: consistently above global trends</p>
 </div>
 <div class="hero-stat">1.5</div>
@@ -86,7 +86,3 @@ The chart also reveals that Denmark leads not just absolutely, but relative to c
 The data tells a clear story: Danish travel culture operates beyond simple economics. From fine dining in foreign capitals to budget backpacking, Danes have integrated international experience into their lifestyle in ways that resist purely financial explanations. This suggests travel, for Denmark, has become less about escape and more about connection—to global cultures, to culinary experiences, and to a broader understanding of Danish identity in an interconnected world.
 Denmark leads even its Nordic neighbors in per-capita travel, forming part of a uniquely mobile Scandinavian bloc that consistently outperforms global economic predictions.
 
-
----
-
-*Ready to explore more? Check out our [destination recommendations](/2023-03-03-tool.html) based on Danish travel preferences.*
