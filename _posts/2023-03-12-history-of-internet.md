@@ -61,30 +61,34 @@ background: '/assets/images/blog/danish-travel.jpg'
   <p style="font-style: italic; color: #666; margin-top: 10px;">Restaurant spending leads across all demographics, ages, and regions</p>
 </div>
 
-The numbers are striking. Restaurants dominate Danish travel budgets across every demographic we analyzed. Self-employed professionals and high earners show the highest overall spending, but their proportional allocations are virtually identical to everyone else's. Even Copenhagen residents, who travel 40% more than rural Danes, follow the same spending pattern.
+The radar charts reveal a remarkable consistency in Danish travel spending patterns. Across all three visualizations—socioeconomic groups, age demographics, and geographic regions—the green area representing restaurant spending forms the dominant portion of each radar shape.
+The patterns tell a compelling story: whether examining high-income earners versus students, under-30s versus pensioners, or Copenhagen residents versus those in North Jutland, the spending allocation follows the same hierarchy. Restaurants consistently claim the largest share, followed by accommodation, with package holidays typically occupying the smallest segment.
+What's particularly striking is how self-employed individuals and high earners show the most expanded radar shapes overall—indicating higher absolute spending—yet their proportional distribution mirrors that of every other demographic group. This visual consistency across all charts underscores that the restaurant-centric spending pattern isn't driven by income levels or age factors, but represents something deeper in Danish travel culture.
 
 <div class="insight-highlight">
   <p>Students allocate more to accommodation while older travelers favor package deals, but these are minor variations within the broader restaurant-centric framework. The consistency suggests this preference is both generational and cultural, deeply embedded in Danish society regardless of life stage.</p>
 </div>
-
 ## Denmark's Global Tourism Journey
 
 <div class="bubble-container">
-  <iframe src="/assets/denmark_tourism_bubble_interactive.html" width="100%" height="900" frameborder="0"></iframe>
+  <iframe src="/assets/denmark_tourism_bubble_interactive.html" width="100%" height="1000" frameborder="0"></iframe>
   <p style="font-style: italic; color: #666; margin-top: 10px;">Track Denmark's position (★) from 1996-2019: consistently above global trends</p>
 </div>
 
 <div class="hero-stat">1.5</div>
 <p style="text-align: center; color: #666; margin-top: -10px;">Average international departures per Danish resident annually</p>
 
-Denmark's travel behavior defies conventional economic wisdom. During the 2008 financial crisis, while other nations drastically cut travel spending, Danish departure rates barely budged. This resilience reveals travel as a cultural imperative rather than a luxury—woven into the fabric of Danish identity in ways that persist through economic uncertainty.
+The bubble chart reveals Denmark's distinct position in the global travel landscape. Unlike the general pattern where travel increases with GDP, Denmark demonstrates remarkably high per-capita departure rates that persist across economic conditions.
+Tracking Denmark's star marker through the years from 1996 to 2019, several patterns emerge. Denmark maintains approximately 1.5 international departures per capita annually, placing it among the world's most mobile populations. Interestingly, Denmark's travel behavior doesn't follow the typical GDP-travel correlation seen in most countries.
+During economic challenges like the 2008 financial crisis, Denmark's position barely shifted. While many countries showed reduced travel activity relative to their economic performance, Denmark maintained its high departure rates, demonstrating travel as deeply embedded in national culture rather than purely economic behavior.
+The chart also reveals that Denmark leads not just absolutely, but relative to countries with similar or higher GDP levels. This suggests a unique cultural relationship with international travel that transcends economic explanations - a finding that aligns with Denmark's consistent restaurant-focused spending patterns abroad.
 
 ## The Danish Travel Formula
 
 The data tells a clear story: Danish travel culture operates beyond simple economics. From fine dining in foreign capitals to budget backpacking, Danes have integrated international experience into their lifestyle in ways that resist purely financial explanations. This suggests travel, for Denmark, has become less about escape and more about connection—to global cultures, to culinary experiences, and to a broader understanding of Danish identity in an interconnected world.
-
 Denmark leads even its Nordic neighbors in per-capita travel, forming part of a uniquely mobile Scandinavian bloc that consistently outperforms global economic predictions.
+
 
 ---
 
-*Ready to explore more? Check out our [destination recommendations](/posts/exploring-the-world) based on Danish travel preferences.*
+*Ready to explore more? Check out our [destination recommendations](/_posts/2023-03-2-tool) based on Danish travel preferences.*
