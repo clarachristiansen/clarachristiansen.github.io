@@ -89,4 +89,4 @@ Denmark leads even its Nordic neighbors in per-capita travel, forming part of a 
 
 ---
 
-*Ready to explore more? Check out our [destination recommendations](/history-of-internet.html) based on Danish travel preferences.*
+*Ready to explore more? Check out our [destination recommendations](/2023-03-03-tool.html) based on Danish travel preferences.*
