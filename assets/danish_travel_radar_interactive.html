@@ -6,22 +6,51 @@
     <title>Danish Travel Spending Patterns</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <style>
+        /* Ensure html and body fill the iframe and hide overflow */
+        html, body {
+            height: 100%; /* Makes html and body take 100% of iframe's height */
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hides any scrollbars within the iframe */
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 100%;
-            margin: 0 auto;
             padding: 0;
             background-color: transparent;
-            overflow: hidden;
+
+            /* Flexbox for vertical layout */
+            display: flex;
+            flex-direction: column;
         }
         .chart-container {
             position: relative;
-            height: 100%;
             width: 100%;
-            margin: 0 auto;
+            margin: 0 auto; /* Centers horizontally if width is less than 100%, but width is 100% here */
             background-color: white;
             padding: 0;
-            overflow: hidden;
+            overflow: hidden; /* Keep for internal canvas overflow */
+
+            /* Flexbox for remaining space */
+            flex-grow: 1; /* Allows it to take up all available vertical space */
+            min-height: 0; /* Crucial for flex items to shrink and prevent overflow */
+        }
+        /* Ensure fixed height elements don't cause overflow by not shrinking */
+        h1, .subtitle, .tab-container {
+            flex-shrink: 0; /* Prevents these elements from shrinking */
+        }
+
+        /* Original styles for aesthetic elements */
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 10px 0;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 10px;
+            font-style: italic;
         }
         .tab-container {
             display: flex;
@@ -47,22 +76,11 @@
         .tab:hover:not(.active) {
             background-color: #d0d0d0;
         }
-        h1, h2 {
-            text-align: center;
-            color: #333;
-            margin: 10px 0;
-        }
-        .subtitle {
-            text-align: center;
-            color: #666;
-            margin-bottom: 10px;
-            font-style: italic;
-        }
-        .insight-highlight {
-            background: linear-gradient(90deg, #3498db22 0%, #3498db11 100%);
-            border-radius: 8px;
-            padding: 20px;
-            margin: 30px 0;
+        /* Canvas sizing within chart-container */
+        canvas {
+            display: block; /* Ensures no extra space below the canvas */
+            width: 100%; /* Chart.js responsive will adapt to parent width */
+            height: 100%; /* Chart.js responsive will adapt to parent height */
         }
         @media (max-width: 768px) {
             .tab {
@@ -71,26 +89,7 @@
             }
         }
     </style>
-
-    <style>
-    html, body, .chart-container {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    canvas {
-        display: block;
-    }
-
-    .tab-container {
-        margin-bottom: 10px;
-    }
-    </style>
 </head>
-
 <body>
     <h1>Danish Travel Spending Patterns</h1>
     <p class="subtitle">Explore how different Danish demographics allocate their travel budgets</p>
@@ -208,9 +207,20 @@
 
             // Update active tab
             document.querySelectorAll('.tab').forEach(tab => {
-                tab.classList.remove('active');
+                // A more reliable way to identify the clicked tab without relying on `event.currentTarget` or `this`
+                // when called from an inline onclick.
+                const btnText = tab.textContent.trim();
+                let currentTabCategory = '';
+                if (btnText === 'Socioeconomic Groups') currentTabCategory = 'socioeconomic';
+                else if (btnText === 'Age Groups') currentTabCategory = 'age';
+                else if (btnText === 'Regions') currentTabCategory = 'region';
+
+                if (currentTabCategory === category) {
+                    tab.classList.add('active');
+                } else {
+                    tab.classList.remove('active');
+                }
             });
-            event.currentTarget.classList.add('active');
         }
     </script>
 </body>
