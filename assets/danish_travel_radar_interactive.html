@@ -2,26 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Danish Travel Spending Patterns</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 1200px;
+            max-width: 100%;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
+            padding: 0;
+            background-color: transparent;
+            overflow: hidden;
         }
         .chart-container {
             position: relative;
-            height: 70vh;
+            height: 100%;
             width: 100%;
-            margin: 20px auto;
+            margin: 0 auto;
             background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            padding: 20px;
+            padding: 0;
+            overflow: hidden;
         }
         .tab-container {
             display: flex;
@@ -50,11 +50,12 @@
         h1, h2 {
             text-align: center;
             color: #333;
+            margin: 10px 0;
         }
         .subtitle {
             text-align: center;
             color: #666;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
             font-style: italic;
         }
         .insight-highlight {
@@ -70,7 +71,26 @@
             }
         }
     </style>
+
+    <style>
+    html, body, .chart-container {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    canvas {
+        display: block;
+    }
+
+    .tab-container {
+        margin-bottom: 10px;
+    }
+    </style>
 </head>
+
 <body>
     <h1>Danish Travel Spending Patterns</h1>
     <p class="subtitle">Explore how different Danish demographics allocate their travel budgets</p>
@@ -83,10 +103,6 @@
 
     <div class="chart-container">
         <canvas id="radarChart"></canvas>
-    </div>
-
-    <div class="insight-highlight">
-        <p>Restaurant spending leads across all demographics, ages, and regions. Students allocate more to accommodation while older travelers favor package deals, but these are minor variations within the broader restaurant-centric framework. The consistency suggests this preference is both generational and cultural, deeply embedded in Danish society regardless of life stage.</p>
     </div>
 
     <script>
