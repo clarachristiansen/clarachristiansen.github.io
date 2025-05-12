@@ -95,9 +95,9 @@
     <p class="subtitle">Explore how different Danish demographics allocate their travel budgets</p>
 
     <div class="tab-container">
-        <button class="tab active" onclick="showChart('socioeconomic')">Socioeconomic Groups</button>
-        <button class="tab" onclick="showChart('age')">Age Groups</button>
-        <button class="tab" onclick="showChart('region')">Regions</button>
+        <button class="tab active" data-category="socioeconomic">Socioeconomic Groups</button>
+        <button class="tab" data-category="age">Age Groups</button>
+        <button class="tab" data-category="region">Regions</button>
     </div>
 
     <div class="chart-container">
@@ -186,6 +186,14 @@
         window.onload = function() {
             const ctx = document.getElementById('radarChart').getContext('2d');
             radarChart = new Chart(ctx, config);
+
+            // Add event listeners to tabs using data attributes
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    showChart(category);
+                });
+            });
         };
 
         // Function to switch between datasets
@@ -207,15 +215,7 @@
 
             // Update active tab
             document.querySelectorAll('.tab').forEach(tab => {
-                // A more reliable way to identify the clicked tab without relying on `event.currentTarget` or `this`
-                // when called from an inline onclick.
-                const btnText = tab.textContent.trim();
-                let currentTabCategory = '';
-                if (btnText === 'Socioeconomic Groups') currentTabCategory = 'socioeconomic';
-                else if (btnText === 'Age Groups') currentTabCategory = 'age';
-                else if (btnText === 'Regions') currentTabCategory = 'region';
-
-                if (currentTabCategory === category) {
+                if (tab.getAttribute('data-category') === category) {
                     tab.classList.add('active');
                 } else {
                     tab.classList.remove('active');
