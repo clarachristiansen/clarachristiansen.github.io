@@ -109,7 +109,10 @@
         let radarChart;
 
         // Chart data from Python
-        const chartData = {"socioeconomic": {"labels": ["Average Household", "Self-employed", "High Income", "Medium Income", "Basic Income", "Unemployed", "Student", "Not in Workforce"], "datasets": [{"label": "Restaurants", "data": [58.450327308658245, 75.50743134752356, 100.0, 82.11536086294208, 67.6149697393882, 67.99374202313805, 47.17773477705958, 30.330602330272967], "backgroundColor": "rgba(46, 204, 113, 0.5)", "borderColor": "#2ecc71", "borderWidth": 2, "pointBackgroundColor": "#2ecc71", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#2ecc71", "order": 3}, {"label": "Package Holidays", "data": [19.39149409197579, 18.860389476717856, 31.40516283091111, 26.91753468648359, 18.16871834987031, 0.6381489563176747, 6.887891638190127, 5.434558853802133], "backgroundColor": "rgba(155, 89, 182, 0.6)", "borderColor": "#9b59b6", "borderWidth": 2, "pointBackgroundColor": "#9b59b6", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#9b59b6", "order": 2}, {"label": "Accommodation", "data": [21.153608629420724, 41.702005022849846, 39.40878587014698, 22.438140722137593, 23.37272016138993, 47.01716826546997, 9.444604553501586, 8.514142204290009], "backgroundColor": "rgba(241, 196, 15, 0.75)", "borderColor": "#f1c40f", "borderWidth": 2, "pointBackgroundColor": "#f1c40f", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#f1c40f", "order": 1}]}, "age": {"labels": ["Average Household", "Under 30 years", "30\u201344 years", "45\u201359 years", "60\u201374 years", "75 years and older"], "datasets": [{"label": "Restaurants", "data": [58.450327308658245, 64.02075013380542, 72.50607270781012, 71.0856766437482, 52.192350446704275, 27.18102844909218], "backgroundColor": "rgba(46, 204, 113, 0.5)", "borderColor": "#2ecc71", "borderWidth": 2, "pointBackgroundColor": "#2ecc71", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#2ecc71", "order": 3}, {"label": "Package Holidays", "data": [19.39149409197579, 11.017332949071596, 13.384659722508133, 25.793569105356333, 23.730906994935978, 17.024167318539256], "backgroundColor": "rgba(155, 89, 182, 0.6)", "borderColor": "#9b59b6", "borderWidth": 2, "pointBackgroundColor": "#9b59b6", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#9b59b6", "order": 2}, {"label": "Accommodation", "data": [21.153608629420724, 9.176993700852238, 24.043805838033677, 28.70846885421384, 25.241879039894606, 8.81057268722467], "backgroundColor": "rgba(241, 196, 15, 0.75)", "borderColor": "#f1c40f", "borderWidth": 2, "pointBackgroundColor": "#f1c40f", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#f1c40f", "order": 1}]}, "region": {"labels": ["Average Household", "Capital Region", "Zealand Region", "Southern Denmark", "Central Jutland", "North Jutland"], "datasets": [{"label": "Restaurants", "data": [58.450327308658245, 78.56231215776688, 47.50298489027955, 49.952653464531274, 53.13516406603812, 39.396434600024705], "backgroundColor": "rgba(46, 204, 113, 0.5)", "borderColor": "#2ecc71", "borderWidth": 2, "pointBackgroundColor": "#2ecc71", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#2ecc71", "order": 3}, {"label": "Package Holidays", "data": [19.39149409197579, 23.965581127259252, 15.949606817901108, 15.554366173988225, 19.053892708633537, 18.300465231174606], "backgroundColor": "rgba(155, 89, 182, 0.6)", "borderColor": "#9b59b6", "borderWidth": 2, "pointBackgroundColor": "#9b59b6", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#9b59b6", "order": 2}, {"label": "Accommodation", "data": [21.153608629420724, 29.659516653629215, 12.058956729383672, 15.348511671950266, 23.72678990489522, 13.07999505949195], "backgroundColor": "rgba(241, 196, 15, 0.75)", "borderColor": "#f1c40f", "borderWidth": 2, "pointBackgroundColor": "#f1c40f", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#f1c40f", "order": 1}]}};
+        const chartData = {"socioeconomic": {"labels": ["Average Household", "Self-employed", "High Income", "Medium Income", "Basic Income", "Unemployed", "Student", "Not in Workforce"], "datasets": [{"label": "Restaurants", "data": [14197, 18340, 24289, 19945, 16423, 16515, 11459, 7367], "backgroundColor": "rgba(46, 204, 113, 0.5)", "borderColor": "#2ecc71", "borderWidth": 2, "pointBackgroundColor": "#2ecc71", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#2ecc71", "order": 3}, {"label": "Package Holidays", "data": [4710, 4581, 7628, 6538, 4413, 155, 1673, 1320], "backgroundColor": "rgba(155, 89, 182, 0.6)", "borderColor": "#9b59b6", "borderWidth": 2, "pointBackgroundColor": "#9b59b6", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#9b59b6", "order": 2}, {"label": "Accommodation", "data": [5138, 10129, 9572, 5450, 5677, 11420, 2294, 2068], "backgroundColor": "rgba(241, 196, 15, 0.61)", "borderColor": "#f1c40f", "borderWidth": 2, "pointBackgroundColor": "#f1c40f", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#f1c40f", "order": 1}]}, "age": {"labels": ["Average Household", "Under 30 years", "30\u201344 years", "45\u201359 years", "60\u201374 years", "75 years and older"], "datasets": [{"label": "Restaurants", "data": [14197, 15550, 17611, 17266, 12677, 6602], "backgroundColor": "rgba(46, 204, 113, 0.5)", "borderColor": "#2ecc71", "borderWidth": 2, "pointBackgroundColor": "#2ecc71", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#2ecc71", "order": 3}, {"label": "Package Holidays", "data": [4710, 2676, 3251, 6265, 5764, 4135], "backgroundColor": "rgba(155, 89, 182, 0.6)", "borderColor": "#9b59b6", "borderWidth": 2, "pointBackgroundColor": "#9b59b6", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#9b59b6", "order": 2}, {"label": "Accommodation", "data": [5138, 2229, 5840, 6973, 6131, 2140], "backgroundColor": "rgba(241, 196, 15, 0.61)", "borderColor": "#f1c40f", "borderWidth": 2, "pointBackgroundColor": "#f1c40f", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#f1c40f", "order": 1}]}, "region": {"labels": ["Average Household", "Capital Region", "Zealand Region", "Southern Denmark", "Central Jutland", "North Jutland"], "datasets": [{"label": "Restaurants", "data": [14197, 19082, 11538, 12133, 12906, 9569], "backgroundColor": "rgba(46, 204, 113, 0.5)", "borderColor": "#2ecc71", "borderWidth": 2, "pointBackgroundColor": "#2ecc71", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#2ecc71", "order": 3}, {"label": "Package Holidays", "data": [4710, 5821, 3874, 3778, 4628, 4445], "backgroundColor": "rgba(155, 89, 182, 0.6)", "borderColor": "#9b59b6", "borderWidth": 2, "pointBackgroundColor": "#9b59b6", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#9b59b6", "order": 2}, {"label": "Accommodation", "data": [5138, 7204, 2929, 3728, 5763, 3177], "backgroundColor": "rgba(241, 196, 15, 0.61)", "borderColor": "#f1c40f", "borderWidth": 2, "pointBackgroundColor": "#f1c40f", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "#f1c40f", "order": 1}]}};
+
+        // Fixed maximum value for scaling
+        const fixedMaxValue = 25000;
 
         // Chart configuration
         const config = {
@@ -144,7 +147,7 @@
                     tooltip: {
                         callbacks: {
                             label: function(context) {
-                                return ` ${context.dataset.label}: ${context.raw.toFixed(1)}%`;
+                                return ` ${context.dataset.label}: ${context.raw.toFixed(2)}`; // Display raw consumption value
                             }
                         }
                     }
@@ -169,10 +172,16 @@
                             showLabelBackdrop: false,
                             font: {
                                 size: 10
-                            }
+                            },
+                            callback: function(value) {
+                                return value.toFixed(0); // Format ticks as whole numbers
+                            },
+                            max: fixedMaxValue, // Set the fixed maximum value for the scale
+                            min: 0,
+                            stepSize: 5000 // Optional: Add step size for better readability
                         },
                         suggestedMin: 0,
-                        suggestedMax: 100
+                        suggestedMax: fixedMaxValue // Ensure suggested max is also set
                     }
                 },
                 elements: {
@@ -210,6 +219,10 @@
 
             // Update chart title
             radarChart.options.plugins.title.text = titles[category];
+
+            // Update the scale's max and suggestedMax when switching charts
+            radarChart.options.scales.r.max = fixedMaxValue;
+            radarChart.options.scales.r.suggestedMax = fixedMaxValue;
 
             // Update chart
             radarChart.update();
