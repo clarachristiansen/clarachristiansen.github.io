@@ -2,7 +2,7 @@
 layout: post
 title: "Beyond Borders"
 subtitle: "Discover why Danes choose to vacation abroad, which countries attract them the most, and how they spend their time while traveling."
-date: 2023-03-02 23:45:13 -0400
+date: 2025-02-27 23:45:13 -0400
 background: '/assets_own/images/beach.jpg'
 ---
 
@@ -39,3 +39,21 @@ The data reveals a notable trend: Danes appear more culturally engaged when abro
 Contrary, leisure and entertainment-focused activities are more common at home. Experience centers, amusement parks, and water parks see higher participation rates within Denmark. This likely reflects the popularity of destinations such as Tivoli, Legoland, and Lalandia, which are optimal for more family-oriented trips.
 
 The comparison highlights a clear distinction: Abroad, Danes seek culture and exploration, while at home, they lean toward fun and relaxation.
+
+<div class="conclusion">
+<p>Danes prefer Southern Europe for its culture, sun, and cuisine, and while they seek cultural experiences abroad, their domestic vacations tend to focus more on leisure and family fun.</p>
+</div>
+
+
+
+<style>
+.conclusion {
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+</style>
