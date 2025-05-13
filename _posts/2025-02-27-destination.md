@@ -2,7 +2,7 @@
 layout: post
 title: "Beyond Borders"
 subtitle: "Discover why Danes choose to vacation abroad, which countries attract them the most, and how they spend their time while traveling."
-date: 2025-02-27 23:45:13 -0400
+date: 2025-04-11 23:45:13 -0400
 background: '/assets_own/images/beach.jpg'
 ---
 
